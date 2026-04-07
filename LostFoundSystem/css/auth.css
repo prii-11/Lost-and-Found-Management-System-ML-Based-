@@ -1,0 +1,116 @@
+/* Background (same as main page) */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../img/gehu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Overlay for readability */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+/* Centered form box */
+.form-container {
+  position: relative;
+  z-index: 1;
+}
+
+.form-box {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 40px 50px;
+  text-align: center;
+  width: 380px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Title (bluish-purple) */
+.form-box h2 {
+  color: #3a4ad4;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+/* Inputs and labels */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.3s;
+  resize: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #3a4ad4;
+  box-shadow: 0 0 6px rgba(58, 74, 212, 0.4);
+}
+
+/* Submit button */
+.btn {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #1a1a1a;
+  color: #7fc9ff;
+  transform: scale(1.03);
+}
+
+.switch-text {
+  margin-top: 15px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.switch-text a {
+  color: #3a4ad4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+}
+

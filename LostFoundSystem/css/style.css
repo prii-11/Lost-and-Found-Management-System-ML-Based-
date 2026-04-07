@@ -1,0 +1,94 @@
+/* 🌌 GEHU Background — clean + subtle dark overlay */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../img/gehu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  position: relative;
+  min-height: 100vh;
+}
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+.navbar, .hero {
+  position: relative;
+  z-index: 1;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 60px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar a {
+  color: #e3f2ff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #7fc9ff;
+  text-shadow: 0 0 8px rgba(127, 201, 255, 0.7);
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  text-align: center;
+  padding: 0 20px;
+}
+.transparent-box {
+  background: rgba(0, 0, 0, 0.2); 
+  padding: 50px 70px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+}
+.main-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7f00ff, #4fc3f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  color: #d0e3ff;
+  margin-bottom: 40px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.black-btn {
+  background: #000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 12px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.black-btn:hover {
+  background: #1a1a1a;
+  color: #7fc9ff;
+  box-shadow: 0 0 12px rgba(127, 201, 255, 0.4);
+  transform: scale(1.05);
+}
+

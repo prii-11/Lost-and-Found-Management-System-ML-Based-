@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Lost Item | Lost & Found System</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-box">
+      <h2>Report Lost Item</h2>
+      <form>
+        <div class="input-group">
+          <label>Item Name</label>
+          <input type="text" placeholder="e.g., Wallet, Phone, ID Card" required>
+        </div>
+
+        <div class="input-group">
+          <label>Date Lost</label>
+          <input type="date" required>
+        </div>
+
+        <div class="input-group">
+          <label>Location Lost</label>
+          <input type="text" placeholder="e.g., Library, Canteen" required>
+        </div>
+
+        <div class="input-group">
+          <label>Description</label>
+          <textarea placeholder="Add details about the lost item" rows="3" required></textarea>
+        </div>
+
+        <div class="input-group">
+          <label>Upload Photo</label>
+          <input type="file" accept="image/*">
+        </div>
+
+        <button type="submit" class="btn">Submit Report</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
